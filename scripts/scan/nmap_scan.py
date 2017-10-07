@@ -13,9 +13,9 @@ class NmapScaner(object):
     def scan(targets,options='-O -sV'):
         '''
         执行扫描
-        :param targets:
-        :param options:
-        :return:
+        :param targets:扫描的目标，可以是List集合对象也，可以是以逗号分隔的目标集合。如"baidu.com" ，["baidu.com","qq.com"] ，"baidu.com,qq.com"
+        :param options:扫描参数，同namp一致。
+        :return:成功返回扫描结果Dict对象，否则返回None
         '''
         try:
             nmapProcess=NmapProcess(targets=targets,options=options)
@@ -31,9 +31,9 @@ class NmapScaner(object):
     def scan_background(targets,options='-O -sV'):
         '''
         后台执行扫描，带进度输出
-        :param targets:
-        :param options:
-        :return:
+        :param targets:扫描的目标，可以是List集合对象也，可以是以逗号分隔的目标集合。如"baidu.com" ，["baidu.com","qq.com"] ，"baidu.com,qq.com"
+        :param options:扫描参数，同namp一致。
+        :return:成功返回扫描结果Dict对象，否则返回None
         '''
         try:
             nmapProcess=NmapProcess(targets=targets,options=options)
