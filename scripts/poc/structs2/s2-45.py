@@ -1,7 +1,10 @@
-import urllib
 import http.client
+import urllib
+
 import requests
-from scripts.poc_interface import PocInterface
+
+from scripts.poc.poc_interface import PocInterface
+
 
 class Structs2_45(PocInterface):
     '''
