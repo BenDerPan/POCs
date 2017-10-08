@@ -2,6 +2,7 @@
 # Add: 20171008
 # Affected Software: Struts 2.3.5 - Struts 2.3.31, Struts 2.5 - Struts 2.5.10
 # CVE Identifier: CVE-2017-5638
+
 import requests
 from scripts.poc.poc_interface import PocInterface
 
